@@ -1,0 +1,201 @@
+
+body{
+    background-color: #F0F5FB;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.linha {
+    margin: 20px;
+}
+
+.titulo {
+    color: #7cde5b;
+}
+
+.conteudo {
+    margin: 20px;
+    color: #2a3526;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tabela_produtos {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabela_produtos thead tr {
+    position: sticky;
+    top: 0;
+    background-color: #68bc4c;
+    z-index: 1;
+}
+
+.tabela_produtos thead td {
+    color: #F0F5FB;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabela_produtos tbody td {
+    background-color: #F0F5FB;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.tabela_produtos td {
+    border: none;
+}
+
+tr {
+    border-bottom: 1px solid #7cde5b;
+}
+
+.tabela_produtos tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+.acoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #7cde5b;
+    border-radius: 7px;
+    border-bottom: 1px solid white;
+}
+
+.gerenciar {
+    font-size: 18px;
+    color: white;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.botoes button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+.adicionar {
+    background-color: green;
+}
+
+.alterar {
+    background-color: blue;
+}
+
+.alterar-parcialmente {
+    background-color: orange;
+}
+
+.deletar {
+    background-color: red;
+}
+
+.tabela_produtos tbody td i {
+    margin: 0 5px; /* Espaçamento entre ícones */
+    color: #2a3526; /* Cor dos ícones */
+}
+
+.tabela_produtos tbody td i:hover {
+    color: #59a53f; /* Cor ao passar o mouse sobre os ícones */
+}
+
+.btn_adicionar {
+    padding: 10px;
+    border: 1px solid #7cde5b;
+    border-radius: 7px;
+    background-color: white;
+    transition: 0.4s;
+    margin-bottom: 10px;
+    width: 200px;
+    margin-left: auto; /* Alinha o botão à direita */
+    color: #4a7e38;
+}
+
+.btn_adicionar:hover {
+    background-color: #6abd4e;
+    color: white;
+}
+
+/* Estilos para o Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10px auto 1px auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre os elementos do formulário */
+}
+.modal-content .btn_adicionar2{
+    background-color: #4a7e38;
+    color: white;
+    border: 0;
+    padding: 10px;
+    border-radius: 6px;
+    transition: 0.7s;
+}
+
+.modal-content .btn_adicionar2:hover{
+    background-color: #345827;
+    color: white;
+    border: 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.close {
+    color: #4a7e38;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: 0.7s;
+}
+
+.close:hover,
+.close:focus {
+    color: #4a7e38;
+    text-decoration: none;
+    cursor: pointer;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea, form select {
+    width: 100%; /* Largura total */
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

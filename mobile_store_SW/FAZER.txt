@@ -1,0 +1,3 @@
+falta fazer as funções PATCH e DELETE e verificar tudo
+
+até o momento ele adiciona outro produto se eu tentar editar, entao fas isso
